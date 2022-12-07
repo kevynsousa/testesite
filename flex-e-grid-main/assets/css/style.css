@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+body{
+    background:linear-gradient( to right, rgb(31,38,57)30%,rgb(55,56,123)) ;
+    font-family: 'Open Sans','icones', sans-serif;
+    color: aliceblue;
+
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color:rgb(31,38,57) ;
+}
+
+.cabecalho__menu i::before{
+    content: "\e904";
+    font-size: 25px;
+
+}
+.cabecalho_logo{
+    width: 150px;
+}
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(31,38,57) ;
+    width: 75vw;
+    height: 100vh;
+    position: absolute;
+    left: -100vh;
+    transition: .25s;
+    z-index: 2;
+}
+
+.menu-lateral--ativo{
+    left: 0;
+    transition: .25s;}
+
+.menu-lateral__link--ativo{
+    color: aliceblue;
+    padding-left: 56px;
+    border-left: 8px solid aliceblue;
+    }
+
+
+.menu-lateral__logo{
+    width:200px ;
+    align-self: center;
+    padding: 16px;
+}
+.menu-lateral__link{
+    padding-left: 64px;
+    height: 64px;
+    color: #95999C;
+    display:flex;
+    align-items: center;
+}
+.menu-lateral__link::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+    
+}
+.menu-lateral__link--lagoinha::before{
+    content: "\e902";
+}
+.menu-lateral__link--ministerio::before{
+    content:"\e903";
+}
+.menu-lateral__link--celulas::before{
+    content:"\e900";
+}
+.menu-lateral__link--eventos::before{
+    content:"\e90a";
+}
+.menu-lateral__link--midia::before{
+    content:  "\e90e";
+}
+.menu-lateral__link--contato::before{
+    content: "\e909";
+}
+.menu-lateral__link:hover{
+    color: rgb(255, 255, 255);
+    
+    transition: 1s all;
+    cursor: pointer; 
+    font-size: 20px; 
+}
+.principal{
+    padding: 20px 25px;
+}
+
+.texto_principal{
+    font-size: 35px;
+    font-weight: bold;
+  text-align: center;
+   position: absolute;
+   z-index: 1;
+   line-height: 1.3;
+}
+.cartao{
+    display: flex;
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+   
+}
+.img_pricipal{
+    opacity: 0.3;
+    z-index: 0;
+    
+    
+}
+.cartao_2{
+    background:linear-gradient( to right, rgb(209, 192, 6)30%,rgb(255, 200, 0)) ;
+    border-radius: 25px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 1.5;
+    
+   
+}
+.tetexto_principal-2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cartao_2 p{
+    font-size:14px ;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+      
+}
+.cartao_2 li{
+    padding-top: 2px;
+    padding-bottom: 2px;  
+}
+.cartao_2 li:nth-child(2n){
+    
+    color: rgb(0, 0, 0);
+    padding-top: 0px;
+    padding-bottom: 20px;  
+}
+.butao{
+    display: inline-flex;
+    align-items: center;
+    border: 1.5px solid black;
+    padding: 7px 18px;
+    border-radius: 25px;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 40px;   
+}
+.butao:hover{
+cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: 0.3s all;
+    font-weight: bold;
+}
+
+.img_button{
+    width: 20px;
+    padding-right: 10px;  
+}
+
+    
+
+
+.novidade{font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    background:linear-gradient( to right, rgb(127, 35, 193)30%,rgb(77, 59, 244)) ;
+    border-radius: 25px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0px 10px 0px;
+}
+.img-novidade{
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.cartao_3{
+    background-color:rgb(31,38,57) ;
+    border-radius: 25px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 1.5;}
+.cartao_3 h5{
+        font-size: 20px;
+        font-weight: bold;}
+.cartao_3 p{
+        font-size:14px ;
+        color: rgb(255, 255, 255);
+        padding-top: 15px;
+        padding-bottom: 15px; }
+.butao_2{
+    display: inline-flex;
+    align-items: center;
+    border: 1.5px solid rgb(255, 255, 255);
+    padding: 7px 18px;
+    border-radius: 25px;
+    color: rgb(195, 195, 195);
+    margin-bottom: 30px;
+    margin-top: 40px;  
+}
+.butao_2:hover{
+    cursor: pointer;
+        color: rgb(0, 0, 0);
+        transition: 0.3s all;
+        font-weight: bold;
+    }
